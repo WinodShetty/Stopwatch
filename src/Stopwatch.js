@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Stopwatch = () => {
     const [elapsedTime, setElapsedTime] = useState(0);
     const [isRunning, setIsRunning] = useState(false);
-     
+
     useEffect(() => {
         let intervalID;
 
@@ -32,7 +32,7 @@ const Stopwatch = () => {
         const remainingSeconds = seconds % 60;
         return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
     };
-      
+
     return (
         <div>
             <h1>Stopwatch</h1>
